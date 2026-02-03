@@ -1,0 +1,5 @@
+Merchant ID,Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+M-0003,RF210331,Jewel Khan,1714888883,Jattrabari Ideal School,Jatrabari,Sugar ,5Kg to 6 Kg,960,Home Delivery
+M-0003,RF210332,Rashedul Helal Tonu,1911349012,"152/2, Green Road, Pathapath",Green Road,Sugar ,1kg to 2 Kg,600,Home Delivery
+M-0003,RF210333,Rakibul Islam,1718704438,"129, West Nakhalpara, Bankers Row, Lucas More",Tejgaon,Sugar ,2Kg to 3Kg,420,Home Delivery
+M-0003,RF210334,Mohammad Mashiur Rahman Khan,1713046556,"Altamira, 20/A, Purbo Swerapara, Kafrul",Kafrul,Sugar ,3Kg to 4Kg,600,Home Delivery

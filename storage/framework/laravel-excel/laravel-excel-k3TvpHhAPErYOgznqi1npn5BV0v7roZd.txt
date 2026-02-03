@@ -1,0 +1,13 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark,Service Type,Item Type
+#1701,Md Shoukat Alam,1720579286,"H- 63 , Flat -B4 , Road - 03. Block-I , Bashundhara Abashik",badda,koyel,400 gm ,710,,Same Day Delivery,
+#1702,Snahar Lipi,1731032919,"H - 109 , Flat -m 9/A , Karnafuly Garden City , Kakrail",,koyel,400 + 400 gm,1080,,Same Day Delivery,
+#1703,MD Rubel,1912298111,"H - 66 , Road - 05. Block_A , Rainkhola , Mirpur - 2",mirpur,koyel,400 gm ,536,,Same Day Delivery,
+#1704,Alhaj Sikandar Ali,1789562230,"H - 13 , Road - 6/1 , Block- B , Section - 12, Pollobi",pollobi,koyel,400 gm ,876,,Same Day Delivery,
+#1705,MD Faruque,1717029829,"Ta 65 , B4 , kanu mia pukurpar Jame Moshjid, Middle Badda",badda,koyel,400 gm ,740,,Same Day Delivery,
+#1706,M Taslim Uddin,1819466277,"H - 109 , Road - 06 , Block-B , Bashundhara R/A , jamuna Future park er pashe",,koyel,400 gm ,740,,Same Day Delivery,
+#1707,MD Shoriful,1911524935,"32/1, Barek Mollah Moshjid Road, Mollah Bari(Uttorpara), Dakhinkhan Kawla",,koyel,400 gm ,468,dupur 2 tar pore nibe,Same Day Delivery,
+#1708,MK Irtiza,1987594176,"H - 39. Road - 07, DIT project, Merul Badda",badda,koyel,400 gm ,450,,Same Day Delivery,
+#1709,Amena,1836749598,Ajimpur (Nilkhet) Bata Moshjid er samne,,koyel,400 gm ,450,,Same Day Delivery,
+#1710,Fahim Islam Faruq,1615317773,"hatirpul, banglamotor, estern plaza er samne",,koyel,400 gm ,468,,Same Day Delivery,
+#1711,Rakib,1614499920,"H-61, Road - 05,Mirpur - 12 , Nahar Academy er pashe",,koyel,400 gm ,468,,Same Day Delivery,
+#1712,Sanjida Akter,1405122891,"58 , Atish Dipongkor Road, South Mugda para, komlapur Stadium er pashe, 4th Floor of Singer Showroom",,koyel,400 gm ,740,shondha 6 Tay nibe,Same Day Delivery,

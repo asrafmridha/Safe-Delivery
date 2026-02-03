@@ -1,0 +1,2 @@
+Merchant ID,Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+M-0003,#753990375562-01,Nahidul Ismal,8801710000000,Al-amin road. House no :44.  Thana : kalabagan. ,Dhamrai,Cloth,1 kg to 2 kg,73232,

@@ -1,0 +1,186 @@
+Success : {
+    true = "Request Accept",
+    false = "Request Reject",
+}
+
+    URL: https://beaconcourier.com.bd/software/api/getDistricts
+    Method : GET
+    Parameter: {
+
+    }
+    Return : {
+        success: 200,
+        message: "",
+        districts: all_active_districts,
+    }
+
+    URL: https://beaconcourier.com.bd/software/api/getDistrict
+    Method : GET
+    Parameter: {
+        district_id : required
+    }
+    Return : {
+        success: 200,
+        message: "",
+        districts: all_active_districts,
+    }
+
+    URL: https://beaconcourier.com.bd/software/api/getUpazilas
+    Method : GET
+    Parameter: {
+        district_id : required
+    }
+    Return : {
+        success: 200,
+        message: "",
+        upazilas: all_active_district_upazilas,
+    }
+
+    URL: https://beaconcourier.com.bd/software/api/getUpazila
+    Method : GET
+    Parameter: {
+        upazila_id : required
+    }
+    Return : {
+        success: 200,
+        message: "",
+        upazilas: upazila_information,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/getServiceAreas
+    Method : GET
+    Parameter: {
+    }
+    Return : {
+        success: 200,
+        message: "",
+        upazilas: all_active_upazila_areas,
+    }
+
+    URL: https://beaconcourier.com.bd/software/api/getAreas
+    Method : GET
+    Parameter: {
+        upazila_id : required
+    }
+    Return : {
+        success: 200,
+        message: "",
+        upazilas: all_active_upazila_areas,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/getArea
+    Method : GET
+    Parameter: {
+        area_id : required
+    }
+    Return : {
+        success: 200,
+        message: "",
+        upazilas: area_information,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/getBranches
+    Method : GET
+    Parameter: {
+
+    }
+    Return : {
+        success: 200,
+        message: "",
+        branches: all_active_branches,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/getBranch
+    Method : GET
+    Parameter: {
+        branch_id : required
+    }
+    Return : {
+        success: 200,
+        message: "",
+        branch: branch_information,
+    }
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/getRiders
+    Method : GET
+    Parameter: {
+        branch_id : required
+    }
+    Return : {
+        success: true,
+        message: "",
+        riders: all_active_branch_riders,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/getRider
+    Method : GET
+    Parameter: {
+        rider_id : required
+    }
+    Return : {
+        success: 200,
+        message: "",
+        rider: rider_information,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/getWeightPackages
+    Method : GET
+    Parameter: {
+
+    }
+    Return : {
+        success: 200,
+        message: "",
+        weightPackages: all_active_weight_package,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/getWeightPackage
+    Method : GET
+    Parameter: {
+        weight_package_id : required
+    }
+    Return : {
+        success: 200,
+        message: "",
+        weightPackage: weight_package_information,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/getDistrictWeightPackageRate
+    Method : GET
+    Parameter: {
+        district_id : required
+        weight_package_id : required
+    }
+    Return : {
+        success: 200,
+        message: "",
+        rate: weight_package_rate,
+    }
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/getMerchantUpazilaWeightPackageCODAndCharge
+    Method : GET
+    Parameter: {
+        merchant_id : required
+        district_id : required
+    }
+    Return : {
+        'success'         => 200,
+        'message'         => "Merchant Upazila, Weight Package, Cod Charge and Merchant Delivery Charge found.",
+        'upazilas'        => all_upazilas,
+        'weightPackages'  => all_weightPackages,
+        'charge'          => charge,
+        'cod_charge'      => cod_charge,
+    }
+

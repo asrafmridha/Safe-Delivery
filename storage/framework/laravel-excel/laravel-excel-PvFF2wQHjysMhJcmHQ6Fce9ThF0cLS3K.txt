@@ -1,0 +1,5 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+#753990375562-01,Nahidul Ismal,8800000000000,Al-amin road. House no :44.  Thana : kalabagan. ,Dhamrai,Cloth,1 kg to 2 kg,73232,
+W62040,Muhammed Noorunnabi,8801755556129,"Muhammed Noorunnabi 
+Shahjalal Islami Bank Limited, Progati Sarani Br. Confidence Center, 1st floor, Shahjadpur, Gulshan,Dhaka 
+BD-13",Gulshan,Watch,2 kg to 3 kg,655,Delivery must to day 

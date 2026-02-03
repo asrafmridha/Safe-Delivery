@@ -1,0 +1,28 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark,Service Type,Item Type
+#001, Jubayer,1609550979,Al-amin road. House no :44.  Thana : kalabagan. ,Kalabagan,Cloth,1 kg,700,A,Regular Delivery,Cloth
+#002,Khondoker Eftakhar Jubayer,1710029052,"Pirojpur, Barisal, Bangladesh",Pirojpur Sadar,Cloth,2 kg,500,A,,
+#003,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,4 kg,1200,A,Same Day Delivery,Fish
+#004,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,3 kg,1800,A,Same Day Delivery,Dry Food
+#005,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,4 kg,1800,A,Same Day Delivery,Cloth
+#006,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,5 kg,1800,A,Same Day Delivery,Cloth
+#007,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,1 kg,1800,A,Same Day Delivery,Cloth
+#008,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,2 kg,1800,A,Same Day Delivery,Cloth
+#009,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,3 kg,1800,A,Same Day Delivery,Cloth
+#010,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,4 kg,1800,A,Same Day Delivery,Cloth
+#011,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,1 kg,1800,A,Same Day Delivery,Cloth
+#012,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,2 kg,1800,A,Same Day Delivery,Cloth
+#013,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,3 kg,1800,A,Same Day Delivery,Cloth
+#014,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,4 kg,1800,A,Same Day Delivery,Cloth
+#015,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,5 kg,1800,A,Same Day Delivery,Cloth
+#016,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,1 kg,1800,A,Same Day Delivery,Cloth
+#017,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,2 kg,1800,A,Same Day Delivery,Cloth
+#018,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,3 kg,1800,A,Same Day Delivery,Cloth
+#019,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,1 kg,1800,A,Same Day Delivery,Cloth
+#020,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,2 kg,1800,A,Same Day Delivery,Cloth
+#021,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,3 kg,1800,A,Same Day Delivery,Cloth
+#022,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,4 kg,1800,A,Same Day Delivery,Cloth
+#023,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,5 kg,1800,A,Same Day Delivery,Cloth
+#024,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,6 kg,1800,A,Same Day Delivery,Cloth
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,

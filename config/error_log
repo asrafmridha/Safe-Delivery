@@ -1,0 +1,8 @@
+[04-Mar-2022 20:38:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/flierexpress/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/flierexpress/public_html/config/app.php on line 16
+[04-Mar-2022 20:38:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/flierexpress/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/flierexpress/public_html/config/app.php on line 16

@@ -1,0 +1,19 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark,Service Type,Item Type
+fa18,saion kumur,1314757173, Noagaon Sadar  ,Noagaon Sadar,Cloth,1 kg,800,,Regular Delivery,Cloth
+fa17,rabeya,1630603368,Sylhet  Sylhet Sadar ,Sylhter Sadar,Cloth,1 kg,600,,Regular Delivery,Cloth
+fa16,mahbuba,1736513289,Sylhet  Sylhet Sadar,Sylhter Sadar,Cloth,1 kg,630,,Regular Delivery,Cloth
+fa15,mim islam,1776198998,Madaripur  Rajoir thana,Madaripur,Cloth,1 kg,450,,Regular Delivery,Cloth
+fa14,tanisha,1872252177,Magura  Magura Sadar  Islampur para,Magura Sadar,Cloth,2 kg,1100,,Regular Delivery,Cloth
+fa13,sabrina,1711183478,jhenaidah kaligonj,Jhenaidah,Cloth,1 kg,600,,Regular Delivery,Cloth
+fa12,pinki,1816493367,comilla kandirpar,Comilla,Cloth,1 kg,2550,,Regular Delivery,Cloth
+fa11,israt,1884292116,noakhlai lokkhipur,Lokkhipur,Cloth,2 kg,950,,Regular Delivery,Cloth
+fa10,raju,1742771915,barishal muradi,Barishal,Cloth,1 kg,800,,Regular Delivery,Cloth
+fa09,liya,1712394261,jhenidah mohespur,Jhenidah,Cloth,4 kg,1950,,Regular Delivery,Cloth
+fa08,mitu,1600189470,munshigonj,Munshigonj,Cloth,1 kg,1650,,Regular Delivery,Cloth
+fa07,md showror,1308124173,jessore cant.,Jessore,Cloth,1 kg,800,,Regular Delivery,Cloth
+fa06,borsha,1743235702,pabna kahsinathpur,Pabna,Cloth,3 kg,1200,,Regular Delivery,Cloth
+fa05,miss,1839876035,214 chasma hill sholosohor,Chittagong,Cloth,1 kg,550,,Regular Delivery,Cloth
+fa04,sagorika,1794072418,manikgonj singain ,Manikgonj,Cloth,1 kg,1600,,Regular Delivery,Cloth
+fa03,shariful islam,1785046607,ashulia savar,Savar,Cloth,1 kg,710,,Regular Delivery,Cloth
+fa02,shopno chara,1904517006,Saidpur  Rangpur,Rangpur,Cloth,1 kg,700,,Regular Delivery,Cloth
+fa01,sadia shaki,1773282996,Moulvibazar,Molvibazar,Cloth,2 kg,1050,,Regular Delivery,Cloth

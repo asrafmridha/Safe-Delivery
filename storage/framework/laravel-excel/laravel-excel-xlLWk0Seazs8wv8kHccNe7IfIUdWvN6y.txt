@@ -1,0 +1,2 @@
+Merchant ID,Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+M-0003,RF210334,Mohammad Mashiur Rahman Khan,1713046556,"Altamira, 20/A, Purbo Swerapara, Kafrul",Kafrul,Sugar ,3Kg to 4Kg,600,Home Delivery

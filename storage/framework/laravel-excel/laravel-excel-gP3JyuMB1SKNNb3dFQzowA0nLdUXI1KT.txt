@@ -1,0 +1,9 @@
+Merchant ID,Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+ M-0003,#753990375562-01,Nahidul Ismal,8800000000000,Al-amin road. House no :44.  Thana : kalabagan. ,Dhamrai,Cloth,1 kg to 2 kg,73232,
+M-0003,RF031909,Naher Hena,1727201748,"6-A. Ambit Green Homes. 3/3, South Mugda",Mugda,Sugar ,1 kg to 2 kg,420,deliver soon
+M-0003,RF031909,Naher Hena,1727201748,"6-A. Ambit Green Homes. 3/3, South Mugda",Mugda,Sugar ,1 kg to 2 kg,420,deliver soon
+M-0003,RF200319,Rasidul Islam,1720579350,"89/13, Gopibagh, 7th Goli",Gopibagh,Sugar ,1 kg to 2 kg,"1,990",deliver soon
+M-0003,RF210320,Adil Hashem ,1911310430,"H-23, R-121, Gulshan-1",Gulshan,Sugar ,1 kg to 2 kg,960,deliver soon
+M-0003,RF210321,Anwar Hossain,1757598533,"H-7, R-2, B-D, Sultan Villa, Banasree",Rampura,Sugar ,1 kg to 2 kg,600,deliver soon
+M-0003,RF210322,Mahbub,1978157520,"H-18, R-8, Block-B, Mirpur-13",Mirpur,Sugar ,1 kg to 2 kg,420,deliver soon
+M-0003,RF210323,Zesmin Akter Tinni,1923996677,"688, (A-1), Assurance Kaer Garden, Baro Moghbazar",Moghbazar,Sugar ,1 kg to 2 kg,420,deliver soon

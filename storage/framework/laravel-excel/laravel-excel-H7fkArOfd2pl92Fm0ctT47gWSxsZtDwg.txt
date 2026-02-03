@@ -1,0 +1,8 @@
+Merchant ID,Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+M-0003,RF210326,Jesmin ,1715402446,"H-41, Road-3, Sec-3, ",Uttara,Sugar ,2 kg to 3 kg,420,Home Delivery
+M-0003,RF210327,Mahfuja,1816713381,"Tenament 7, C-4, Block-E, Appolo Hospital Er Pisone",Bashundhara,Sugar ,2 kg to 3 kg,420,Home Delivery
+M-0003,RF210328,Nargis Begum,1811547154,"272/K, Holiview, West Agargaon, Taltola",Agarogaon,Sugar ,3 kg to 4 kg,600,Home Delivery
+M-0003,RF210329,Asma Hossain,1819160431,"36/1, 36/2, Rain Forest Building, Elephant Road, Besides Priangon Shopping ",Elephant Road,Sugar ,2 kg to 3 kg,420,Home Delivery
+M-0003,RF210330,Dawon Mohammod Malek,1715475483,"H-50, R-14, Sector-6",Uttara,Sugar ,3 kg to 4 kg,540,Home Delivery
+M-0003,RF210331,Jewel Khan,1714888883,Jattrabari Ideal School,Jatrabari,Sugar ,5 kg to 6 kg,960,Home Delivery
+M-0003,RF210332,Rashedul Helal Tonu,1911349012,"152/2, Green Road, Pathapath",Green Road,Sugar ,1 kg to 2 kg,600,Home Delivery

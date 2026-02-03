@@ -1,0 +1,2 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+DD225,Farzana,1738802635,"H 421, opposite tejgaon",dhaka,Cloth,1,1340,

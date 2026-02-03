@@ -1,0 +1,5 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark,Service Type,Item Type
+#007, Jubayer,1609550979,Al-amin road. House no :44.  Thana : kalabagan. ,Kalabagan,Cloth,1 kg,700,,Regular Delivery,Cloth
+#006,Khondoker Eftakhar Jubayer,1710029052,"Pirojpur, Barisal, Bangladesh",Pirojpur Sadar,Cloth,2 kg,500,,,
+#005,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,4 kg,1200,,Same Day Delivery,Fish
+#004,Humayon,1798495649,"25/2 , Kolabagan, Dhaka, Bangladesh",Kalabagan,Cloth,3 kg,1800,,Express Delivery,Dry Food

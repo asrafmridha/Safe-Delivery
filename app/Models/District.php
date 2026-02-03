@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class District extends Model
+{
+    use HasFactory;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'service_area_id', 'home_delivery', 'lock_down_service', 'created_admin_id','updated_admin_id'
+    ];
+
+
+    public function service_area() {
+        return $this->belongsTo(ServiceArea::class, 'service_area_id')->withDefault(['name' => 'Service Area']);
+    }
+
+    public function created_admin() {
+        return $this->belongsTo(Admin::class, 'created_admin_id')->withDefault(['name' => 'Admin User']);
+    }
+
+    public function updated_admin() {
+        return $this->belongsTo(Admin::class, 'updated_admin_id')->withDefault(['name' => 'Admin User']);
+    }
+}

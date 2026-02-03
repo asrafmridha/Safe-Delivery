@@ -1,0 +1,213 @@
+@media print {
+
+
+    @page {
+        width: 80mm;
+        height: 297mm;
+        margin: 0 10px 0 0;
+    }
+
+    .contentCenter{
+        justify-content: center;
+        text-align: center;
+    }
+    .printInv{
+        display: none !important;
+    }
+
+
+
+    #page-body p{
+        font-size: 14px;
+    }
+
+    #page-body {
+        margin: 0px 0;
+        padding: 0px;
+        font-family: sans-serif;
+        background: #E7EEF2;
+    }
+
+    /* for POS print*/
+    .panel-color {
+        width: auto;
+        height: auto;
+        background: #fff;
+    }
+
+    .panel-head {
+        background: #fff;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .cstbd img {
+        text-align: center;
+        width: 120px;
+        height: 60px;
+    }
+
+    .print {
+        text-align: center;
+        color: blue;
+        cursor: pointer;
+    }
+
+    .print:hover {
+        color: green;
+    }
+
+    p {
+        font-size: 11px;
+        margin: 3px 0;
+    }
+
+    th {
+        font-size: 11px;
+        font-weight: 800;
+    }
+
+    td {
+        font-size: 13px;
+    }
+
+    .table>thead>tr>th,
+    .table>tbody>tr>th,
+    .table>tfoot>tr>th,
+    .table>thead>tr>td,
+    .table>tbody>tr>td,
+    .table>tfoot>tr>td {
+        padding: 3px;
+        font-size: 14px !important;
+    }
+
+    /* for General print */
+    .mood {
+        height: auto;
+        background: #fff;
+        border: 1px solid #000;
+        border-radius: 0px;
+        padding: 15px 40px;
+        margin: 0 120px
+    }
+
+    .tb_bd {
+        background: #fff;
+        border: 1px solid #000;
+    }
+
+    .pos {
+        margin: 0 73px;
+    }
+
+    .pos label {
+        font-size: 11px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .general {
+        margin: 0 215px;
+    }
+
+    small {
+        float: right;
+        font-size: 13px;
+    }
+}
+
+#page-body {
+    margin: 20px 0;
+    padding: 0px;
+    font-family: sans-serif;
+    background: #E7EEF2;
+}
+
+/* for POS print*/
+.panel-color {
+    width: 380px;
+    height: auto;
+    background: #fff;
+    /*border: 1px solid #000;*/
+    /*border-radius: 0px;*/
+}
+
+.panel-head {
+    background: #fff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cstbd img {
+    text-align: center;
+    width: 120px;
+    height: 60px;
+}
+
+.print {
+    text-align: center;
+    color: blue;
+    cursor: pointer;
+}
+
+.print:hover {
+    color: green;
+}
+
+p {
+    font-size: 11px;
+    margin: 3px 0;
+}
+
+th {
+    font-size: 11px;
+    font-weight: 800;
+}
+
+td {
+    font-size: 13px;
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+    padding: 3px;
+    font-size: 12px;
+}
+
+/* for General print */
+.mood {
+    height: auto;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 0px;
+    padding: 15px 40px;
+    margin: 0 120px
+}
+
+.tb_bd {
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.pos {
+    margin: 0 73px;
+}
+
+.pos label {
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.general {
+    margin: 0 215px;
+}
+
+small {
+    float: right;
+    font-size: 13px;
+}

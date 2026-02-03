@@ -1,0 +1,98 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark,Service Type,Item Type
+#1601,Shamima Rahman Shulota,1711231388,ka-47 shahara villa joar shahara Bazar Dhaka opposite of jamuna future park and beside alif medicine corner,Joar Shahara,Misti,1 kg,650,16 Otober. Sunday te nibe,Same Day Delivery,Misti
+#1602,Akhi Sultana,1689936244,"17, Segun bagicha. Topkhana road. Dhaka: 1000 
+Nokshi Ibrahim. Flat no: 6A 
+Near BIRDEM 2",Segun Bagicha,Misti,1 kg,650,,Same Day Delivery,Misti
+#1603,Bithika Chakma,1792527025,"House 282, Road 4, Avenue 3, Mirpur DOHS",Mirpur DOHS,Misti,1 kg,650,,Same Day Delivery,Misti
+#1604,Mahabuba Mushrafi Rupu,1741242474,"94 arju tower, flat -5/B 
+Indira road, tollabag, amtola",Tallabag,Misti,1 kg,650,,Same Day Delivery,Misti
+#1605,Synthia Anika,1799538272,"Banani, Road 2,house 12,",Banani,Misti,1 kg,650,sunday- after 5 O'clock,Same Day Delivery,Misti
+#1606,Nurul Islam Manik,1977700320,"House 23/2/Ka, Box Kalbard, Kalabagan, Bashundhara City er Ulta Dike Masjid Goli ",Kalabagan,Misti,1 kg,650,,Same Day Delivery,Misti
+#1607,Sharmin Khan,1911418799,"Apt B5, House 3A, Road 25A, Banani, Dhaka 1213",Banani,Misti,1 kg,650,,Same Day Delivery,Misti
+#1608,Mahabub Alam,1985992277,"chalk bazar, 5/3 becharam, dewri",Becharam Dewri,Misti,1 kg,650,,Same Day Delivery,Misti
+#1609,Farzana Nishi,1756355379,"601, house:97,98, road:7, monsurabad housing, adabor",Adabor,Misti,1 kg,650,,Same Day Delivery,Misti
+#1610,Tanjina Hossain- Naushad,1799814940,"Flat 103 ,House 13 ,Road 51, Gulshan 2",Gulshan,Misti,1 kg,650,,Same Day Delivery,Misti
+#1611,MH Durjoy,1701057442,"Konapara alamin road, Islam Place, House no: 68, Word no: 64, near mosque, Konapara, Demra, Dhaka 1362",Demra,Misti,1 kg,650,,Same Day Delivery,Misti
+#1612,Chumki Islam,1712868297,"House no - 14 (Assort Hasna), Road no - 5, Kallyanpur, Dhaka - 1207",Kallyanpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1613,Lutfa Amin,1717714091,368/1 Modhubag Moghbazar Dhaka.,Moghbazar,Misti,1 kg,650,,Same Day Delivery,Misti
+#1614,Sharmin Lisa,1716205605,"House 1 ,road-33 ,sector 7, Uttara Dhaka .",Uttara,Misti,1 kg,650,,Same Day Delivery,Misti
+#1615,Samina Sultana Rapty,1925525970,"Joynagar Government Officers Complex Building Number 4, Flat 9E, Mirpur 15",Mirpur - 15,Misti,1 kg,650,,Same Day Delivery,Misti
+#1616,Sohrab Hossain Rasel,1673060706,"1/kha umesh datta road, urdu road dhal, Chawkbazar Dhaka,",Chawkbazar (Dhaka),Misti,1 kg,650,,Same Day Delivery,Misti
+#1617,Kamruzzaman Real,1552333393,"house-25, road-19, sector-4, Uttara Dhaka",Uttara,Misti,1 kg,650,,Same Day Delivery,Misti
+#1618,Alvee,1673981777,"H-5/A, R-Dhanmondi 28, flat- 2E (Subasta Swapnil)",Dhanmondi,Misti,1 kg,650,,Same Day Delivery,Misti
+#1619,Ranjit,1999319190,"holding no-L8,arifabad housing society,R-1, 2nd Floor ",Arifabad,Misti,1 kg,650,,Same Day Delivery,Misti
+#1620,Shabnam Chowdhury,1791575004,"house-4, Road-14, park road Baridhara Diplomatic zone",Baridhara,Misti,1 kg,650,,Same Day Delivery,Misti
+#1621,Shakila Maleque,1711082917,"House 6,Road 17/B,Sector 12,Uttara",Uttara,Misti,1 kg,650,,Same Day Delivery,Misti
+#1622,Salma Sultana,1748796076,"143, Purbo Tejturi Bazar, Tejgaon, Dhaka ",Tejgaon,Misti,2 kg,1240,,Same Day Delivery,Misti
+#1623,Nisha Rahman,1842350140,"Road 72, House 3, Gulshan ",Gulshan,Misti,1 kg,650,,Same Day Delivery,Misti
+#1624,Sultana Kawsar,1904626105,"19/1 Panthapath, Dhaka 1205, opposite of square hospital, concord regency tower, flat:16/A,",Panthapath,Misti,1 kg,650,,Same Day Delivery,Misti
+#1625,Engr Shamim (Salma Sultana),1913445518,"Holding no-1/29 dokkhin kajla, ward no-62, Dhonia, Jatrabari, Near Hanif Flyover+Swapna Supershop,",Jatrabari,Misti,1 kg,650,Showpner Shamne ese call dile receive korbe ,Same Day Delivery,Misti
+#1626,Nargish Khan,1712211710,"104/c central Road 
+Flat 6b, Hatirpul bazaar thake shamne",Hatirpool,Misti,1 kg,650,,Same Day Delivery,Misti
+#1627,Zahidul Islam,1860606079,"(In Front of Taltala Mosque) 
+SDCC Holding: 92, Amtala, Bahir Tengra, 
+Sarulia, Demra, Dhaka. 1361",Demra,Misti,1 kg,650,,Same Day Delivery,Misti
+#1628,Md. Hanif ,1568285167,"House 17, Joynagh Road, Bakshi Bazar, Dhaka ",Bakshibazar,Misti,1 kg,650,,Same Day Delivery,Misti
+#1629,Md. Rafiqul Islam,1712957059,"Joynal tower,floor-2, imamgonj shahi mosjider pashe, Noor Islam Sons. ",Puran Dhaka,Misti,2 kg,1240,6pm ,Same Day Delivery,Misti
+#1630,Anisa Jahan,1923708557,Ka 51/2 joar Sahara Bazar kuril dhaka,Kuril,,1 kg,0,,Same Day Delivery,Misti
+#1631,Rubina Akter Soniya,1942808438,"70 duriangul line, Nowabgong, Lalbagh",Lalbagh,Misti,1 kg,650,,Same Day Delivery,Misti
+#1632,Nashin Sobhani,1755678011,"House 121, road 4, block C, bashundhara r/a",Bashundhara R/A,Misti,1 kg,650,,Same Day Delivery,Misti
+#1633,"Ismat Ara Monju, Bangladesh Mohila Awamilig, Member, Center Committee ",1683648333,"Flat # B-7, Building Kha 97/10, Dia Bari, Uttar Bishil Shah Ali, Mirpur-1",Mirpur 1,Misti,1 kg,650,Pls Call before come ,Same Day Delivery,Misti
+#1634,Raz Amin,1675337238,"12, Shornali Building (11th Floor), Kusumbagh R/A, Uttor Bishil Mirpur 1, Balur Math, Sarang Barir More, (Mazar er Gombujer Paser Goli dia soja)",Mirpur 2,Misti,1 kg,650,,Same Day Delivery,Misti
+#1635,Lipe Islam,1920704559,"Postagola Shampur Pal Pada Mondir er Shamnei Basa, Jatrabarir Dike ",Jatrabari,Misti,1 kg,650,,Same Day Delivery,Misti
+#1636,Zaynal Mohammad,1755926933,"68/2, 4 tola Kazi Alauddin, Nazira Bazar",Nazira Bazar,Misti,1 kg,650,,Same Day Delivery,Misti
+#1637,Farzana Bristy,1773808406,"#House no. 3, #Road no. 4, Bosila Mach bazar goli, Bosila, Mohammadpur, Dhaka.",Mohammadpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1638,Ruma Ahmed,1715390033,"Sector 14, Road 17 and House 50. Uttara, Dhaka.",Uttara,Misti,1 kg,650,,Same Day Delivery,Misti
+#1639,Ashiq Rahman - Shahajahan ,1967953177,"63/5 ,Flat#F3 , 
+”Panthonir Apartment” 
+Lakecircus kalabagan Dhanmondi, Dhaka",Dhanmondi,Misti,1 kg,650,,Same Day Delivery,Misti
+#1640,Md Babu Ahmed,1953890594,Nawubpur BCC rood hotel star,Nawabpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1641,Ah Bachchu,1814918755,"Pashim Para Milon Road, Demra, Dhaka ",Demra,Misti,1 kg,650,,Same Day Delivery,Misti
+#1642,Selina Azad Azad,1711567281,"House 297/B, Road-19/B, Mohakhali DOHS, Dhaka Cantanment ",Mohakhali,Misti,1 kg,650,,Same Day Delivery,Misti
+#1643,Azaz Khan,1919210273,"168/1, Green Road, Flat-B-4, House-Satadal, Comport Hospital er pisone, Dormetori Mashjider Ulta Pase ",Green Road,Misti,1 kg,650,,Same Day Delivery,Misti
+#1644,Nur Hasan Ali,1712637085,"House:3,Block:C,Road:7/A, Nobody Housing,Mohammadpur,Dhaka",Mohammadpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1645,Enam Bokul,1688702567,"498/A, Bagan Bari, Malibagh, Dhaka ",Malibagh,Misti,1 kg,650,,Same Day Delivery,Misti
+#1646,Trinoy Taronno - Trina.,1865076688,"Baby's Dream, house# C/3. Eastern housing, project-2, south kallyanpur",Kallyanpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1647,Anika Jamal Sreya,1977605022,"1/2,A khilgaon sipahibag (club er mor) Dhaka",Khilgaon,Misti,1 kg,650,,Same Day Delivery,Misti
+#1648,MD Hasan Mahmud,1406644102,Vashabtek Bazar mor,Vashantek,Misti,1 kg,650,,Same Day Delivery,Misti
+#1649,Sikander Parvez - S M Parvez,1715219251,Road 31 House 10 Rupnagar R/A Mirpur dhaka,Mirpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1650,Sayeed Hossain,1711544331,"House 64, Road-2/A, Dhanmondi R/A, Near Jigatola Bus Stant ",Dhanmondi,Misti,1 kg,0,,Same Day Delivery,Misti
+#1651,Arbaz Aman Ratul,1797538437,"Bashundhara R/A ,Road no : 10 
+Block : F ,House : 108
+Floor : 1st / 102",Bashundhara R/A,Misti,1 kg,650,,Same Day Delivery,Misti
+#1652,Housne Ara Begum,1715006323,"11/7E Mirbagh, Dhaka ",Mirbagh,Misti,1 kg,650,,Same Day Delivery,Misti
+#1653,Md. Rysul Islam Piyal,1670161889,"Building Number: 2, Flat Number: 12, Kallyanpur Housing Estate (Opposite Side Of Govt. Bangla College), 125/1 Darus Salam Road, Mirpur, Dhaka-1207",Mirpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1654,Tahmina Anni Rahman,1715020025,"5milkvita. ICDDRB housing. D4 abokash. Pallabi. Section 7. Mirpur, Dhaka",Mirpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1655,Sobrat Jahan,1824697963,"pilkhana dhaka 
+soinek iqbal , put shakha , BGB HQ",Pilkhana,Misti,1 kg,650,,Same Day Delivery,Misti
+#1656,Mohammad Shakil,1720473003,"Uttara azampur sector 4 plot 2 
+",Uttara,Misti,1 kg,650,,Same Day Delivery,Misti
+#1657,Rini,1682802453,"House 1, Road 5, Flat E5, Block G, Rampura Banasree ",Rampura,Misti,1 kg,650,,Same Day Delivery,Misti
+#1658,Oishe Create - Monoroma Parveen,1720009362,"building - voirobi, Flat - 13-SA/1, Lackcity concord, khilkhet, Dhaka",Khilkhet,Misti,1 kg,650,,Same Day Delivery,Misti
+#1659,Fariha Mamun,1776113399,"Road 18, House 32, Sector 14, uttara Dhaka",Uttara,Misti,2 kg,1240,,Same Day Delivery,Misti
+#1660,Md Romjan,1711048072,"38/5 er 3, Inforn Azimpur Puraton Kaborstan",Azimpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1661,Karim Khan ,1712168789,"House-Dolipara Karim Khaner Bari, Uttara Jashim Uddin Road, Passhim Matha ",Uttara,Misti,1 kg,650,,Same Day Delivery,Misti
+#1662,Arafan ,1706001468,"House 192, Road-18, Block-K, 1st Floor, Left Side ",Banasree,Misti,1 kg,650,,Same Day Delivery,Misti
+#1663,Halim Talukder,1716497773,"Sufia eden ,Halim talukder ,63/6–west dhanmondi Shankar ,Flat number—C3,Dhaka",Dhanmondi,Misti,1 kg,650,,Same Day Delivery,Misti
+#1664,Tanjila Lina,1684801761,"Sampritee Bhavan, House 22/4, Tolar Bagh 3no Gate er Ager ba paser goli, 26 dagh bolle j kew dekiye dibe, Mirpur Dhaka ",Mirpur 1,Misti,1 kg,650,,Same Day Delivery,Misti
+#1665,Nurun Nahar - Dr Nurun nahar,1789922115,"50 siddheswari road 
+Ramna Dhaka-1217",Ramna,Misti,1 kg,650,,Same Day Delivery,Misti
+#1666,Kazi Roman Ahmed,1755522029,"""FALCON JAHAN"" House # 150-151, Road # 5, Block # C, Flat # C7, Bashundhara R/A, Dhaka-1229",Bashundhara R/A,Misti,1 kg,650,,Same Day Delivery,Misti
+#1667,Tariqul Islam Sikder,1733788374,"330/331 Afroza begum Rd, 
+Talukdar bari, 6th floor (left), 
+Bashundhara residential area, 
+Bashundhara, Baridhara. 
+Dhaka 1229, Bangladesh.",Bashundhara R/A,Misti,1 kg,650,,Same Day Delivery,Misti
+#1668,Md Reza,1716597127,Uttara Azampur Amir Complex I K Jewelary 1st Floor ,Uttara,Misti,1 kg,650,,Same Day Delivery,Misti
+#1669,Syed Jahangir Syed,1837343844,"51 Mazar Co-operative Market, Mirpur 1 ",Mirpur 1,Misti,1 kg,650,,Same Day Delivery,Misti
+#1670,Pran To,1881655855,"271/B(Anamika Khandorkar villa),Khilgain taltola dhaka -1219",Khilgaon,Misti,1 kg,650,,Same Day Delivery,Misti
+#1671,Sharmila SG,1989171513,"146 new baily road 
+eastern baily appertment",Baily Road,Misti,1 kg,650,12 ta theke 4 tar moddhe delivery diben,Same Day Delivery,Misti
+#1672,Sabrin khan,1911047727,"shaptak kazuria, flat-B 1, Road-16 (new) / 27(Old), H-26/A",Dhanmondi,Misti,1 kg,650,,Same Day Delivery,Misti
+#1673,Lina Kabir,1964898133,"3/8 lalmatia, Block- E, Flat - 2w. 01964898133",Lalmatia,Misti,1 kg,650,,Same Day Delivery,Misti
+#1674,Zawad Bin Hafiz,1777119859,"Flat 3A, 178/103 Jhawlahati, Jhawchar (lobon factory theke samne), Dhaka, hazaribagh,beribadher pore",Hazaribag,Misti,1 kg,650,,Same Day Delivery,Misti
+#1675,Nawaz Chowdhury,1715622235,"394, Dewan City, Azampur, Uttara, Sector 6, Dhaka",Uttara,Misti,1 kg,650,,Same Day Delivery,Misti
+#1676,Swapnar Rajkonna ,1721136638,"house 17/1/14, harirampur road,lalkuthi, mirpur",Mirpur,Misti,1 kg,650,,Same Day Delivery,Misti
+#1677,Syed Tanim,1717842145,House#65 Road#3 Block#I Basundhara R /A,Bashundhara R/A,Misti,1 kg,650,,Same Day Delivery,Misti
+#1678,Mahbubul Alam,1670266250,"82/119, Shahi Bagh Battola, Dakkhin Gao, Basabo ",Bashabo,Misti,2 kg,1240,,Same Day Delivery,Misti
+#1679,Bab Sar,1894766910,"House 163, Road1 ,Dohs mirpur",Mirpur DOHS,Misti,1 kg,650,,Same Day Delivery,Misti

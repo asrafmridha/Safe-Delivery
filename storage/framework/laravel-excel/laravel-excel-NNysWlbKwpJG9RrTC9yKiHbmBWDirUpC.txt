@@ -1,0 +1,5 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+4632,Polas Sorker ,1708934632,Nasirnagar,Brahmanbaria,Mobile Cover,1 kg ,430,
+1901,Golam Azom ,1873871901,Ramu,Coxs Bazar,Mobile Cover,1 kg ,"1,400",
+8633,Alamgir Hosen Joy ,1714648633,Satkhira Sadar,Satkhira,Mobile Cover,1 kg ,630,
+945,Md. Sajib Hossain ,1795840945,Shajahanpur,Bogra,Mobile Cover,1 kg ,830,

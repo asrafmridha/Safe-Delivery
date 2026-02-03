@@ -1,0 +1,86 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark,Service Type,Item Type
+#001,"Md Nazmul",1711967475,"730/8, Block-c, 5th Floor (west), Khilgaon, Dhaka-1219. West Side Of Puraton Paka Masjid.",Dhaka,Foods,7.5,5550,"দেশি মাঘী সরিষার তেল (৫ লিটার), কালোজিরা মধু (১ কেজি), গাওয়া ঘি 2 কেজি///100",,
+#002,Roushon Ara,1819380380,"Address: house 10, road F, Sector 9, Uttora.",Dhaka,Foods,2,1960,Ghee half kg // Honey Nut 800 gm// 60,,
+#003,Abdul Gafur,1912292825,"Address :দ‌ক্ষিনগাওবাজার বটতলা, বাসা‌বো,সবুজবাগ,ঢাকা।",Dhaka,Foods,5,2250,"Kather gani vanga shorisar tel 5 litre 
+Gawa ghee half kg//100",,
+#004,MD Ferdous,1742020369,"Address: Dhaka, North Badda, satharkul road, gm bari",Dhaka,Foods,2,640,sorisar tel 2 lite//60,,
+#005,Hira,1705487587,"Dhaka,Postogola bridge er niche, azad mosjid .ward 54",Dhaka,Foods,1,1270,kalozira modhu 1 kg //70,,
+#006,Zannatul Ferdous,1718380737,"Address: 22/1 BDR Bari Road, south ananda nagar, Aftabnagar, Dhaka",Dhaka,Foods,1,1460,Ghee 1 kg //60,,
+#007,Shahporan,1957272470,Dhaka. Hazaribag gonoktuly city coloni UCEP school,Dhaka,Foods,1,600,Black Seed Honey/কালোজিরা মধু 500 Gram//0,,
+#008,Masuma Begum,1772296963,Shekhertek house-10 road-10 mohammadpur dhaka-1207,Dhaka,Foods,1,1320,shondorboner modhu 500 gm //70,,
+#009,Asaduzzaman,1611555888,"Dhaka, Badda, Subastu thana road  panir pump",Dhaka,Foods,1,660,Klojira Fuler Modhu   500gr//60,,
+#010,"Mahmudul Hasan",1711197554,"Flat # A-1, House # 402-404, Avenue # 3 , Road # 6, Mirpur DOHS, Dhaka
+Bangladesh",Dhaka,Foods,5,1850,"gold tea 500gm //
+shorishar tel 5litre//100",,
+#011,Babu,1711664499,"68/1, t.i.c colony, dakhkhinkhan,uttara
+Bangladesh",Dhaka,Foods,3,2880,honey nut 800gm//kalojira modhu 500gm//80,,
+#012,Ruhul Amin,1711813987,"Kamrangir Char,Dhaka
+Bangladesh",Dhaka,Foods,1,1270,Black Seed Honey/কালোজিরা মধু (১ কেজি) +70tk,,
+#013,Md Asif Khan,1719437904,"F-123, Government Quarter, Shere-e-Bangla Nagar, Agargawn, Dhaka-1207",Dhaka,Foods,2,3600,সুন্দরবনের প্রাকৃতিক চাকের মধু (৫০০ গ্রাম) 2box//Local Kalijira Oil/দেশি কালোজিরার তেল 500ml//100,,
+#014,Saad,1816420350,"i/14 kazi Nazrul Islam road,mohammadpur ,dhaka
+Bangladesh",Dhaka,Foods,1,1270,Black Seed Honey/কালোজিরা মধু (১ কেজি//70,,
+#015,গোলাম রাব্বি,1704411045,"ঢাকা কামরাঙ্গীর থানা  চর খোলামোরা কাচা বাজার
+Bangladesh",Dhaka,Foods,1,1300,Honey nuts 800 gm//100,,
+#016,Arafat Rahman,1709647976,"House#108, Rosulpur, shahi mosque, dhania, Jatrabari",Dhaka,Foods,1,1270,Honey nuts 800 g//70,,
+#017,মেহেদি হাচান,1315530050,১৬সৈয়দ হাচান আলী লেন বাবুবাজার ঢাকা,Dhaka,Foods,1,660,Black Seed Honey/কালোজিরা মধু 500gm ++60,,
+#018,Syed Najibullah,1718310778,"C/O Basir Bhai, GA, 32/B -1, Flat A4, Shahjadpur, Gulshan - 2, Dhaka 1212",Dhaka,Foods,3,3280,"shorishar tel 1 liter 2 box //
+kalozira oil 500 ml //
+kalozira modhu 500 gm //
+Gold tea 500 gm //
+Gawa ghee 500 gm //100",,
+#019,Ahnaf Tahmid,1821266257,Address: Moddho badda cumilla para ja 133/1 (Chowdhury villa),Dhaka,Foods,1,1310,shundorboner modhu half kg //60,,
+#020,Md. Imran khan,1625097095,"40 fit bosila road, beribad, Mohammad pur, dhaka
+Bangladesh",Dhaka,Foods,1,1270,kalojira modhu 1kg//70,,
+#021,Tushar,1759891989,"Address: House number 48
+Boshumati road,solmaid,vatara, dhaka",Dhaka,Foods,4,1550,"3 liter soriser tel //
+Kalojira fuler modhu half kg//80",,
+#022,Kazi moslauddin,1712576018,"675/1 West kazipara mirpur Dhaka
+Bangladesh",Dhaka,Foods,1,2580,Sundor boner Modhu  1kg//80,,
+#023,Farzana Akter,1670604121,"Address:  469/ 2, Ayono Garden. Akhter properties. Flat no- 303.
+Mirpur - 13. Senpara, Parbata.",Dhaka,Foods,2,2070,"Ghee 1kg 1400 tk
+kalojira fuler modhu half kg //70",,
+#024,Raihan,1732415495,House 12 road 15 sector 14 Uttara,Dhaka,Foods,1,1270,Black Seed Honey/কালোজিরা মধু (১ কেজি) 1200+70tk,,
+#025,Mohammad siyam,1793536242,dhaka mirpur 1 new C block road number 4 house number 27,Dhaka,Foods,1,360,shorishar tel 1 liter 290 tk + 70 tk,,
+#026,Nour,1711966821,"ক-২১৭/৫(বর্তমান-৭৬৪),খিলখেত তেতুলতলা,ঢাকা-১২২৯ বারির মালিক নাম হাজী মোঃ আব্দুর রহমান",Dhaka,Foods,1,1270,kalozira modhu 1 kg//70,,
+#027,Hashmat Begum,1553506744,"Apartment 7D, RUSSEL LODGE, 32/4-A Shahjahan Road, Mohammadpur. Dhaka, Bangladesh
+Bangladesh",Dhaka,Foods,4,2600,"gawa ghee 500gm //
+shorishar tel 2litre //extra virgin olive oil 1litre //70",,
+#028,Ghum Kumari,1846328220,Address: Road 12 house 27 block h banani,Dhaka,Foods,3,1350,"Sorishar tel 2 litre 580 taka
+Ghee Half kg//70",,
+#029,আবদুর রহিম,1646470678,"622/A পশ্চিম শেওড়াপাড়া কাঁচা বাজার সংলগ্ন
+Bangladesh",Dhaka,Foods,1,1270,kalojira modhu 1kg //70,,
+#030,হাফেজ রবিউল,1820246091,মেরাদিয়া নয়াপারা দুতলা জামে মসজি,Dhaka,Foods,1,660,kalozira modhu 500 gm 600 tk +60 tk,,
+#031,Sipu Jess,1711129282,"Address:  House -41,road-13,sector -13, Uttara . Dhaka",Dhaka,Foods,9,3000,10 liter soriser tel//100,,
+#032,আজিজুল,1645953982,"Moghbazar, wereless Railgate, pirpagla goli
+Bangladesh",Dhaka,Foods,1,1320,shundorboner modhu 500gm 1250+70t,,
+#033,RAJIB,1624232626,"15,7 Mohammadpur dhaka",Dhaka,Foods,1,1270,"kalojira modhu 1kg 1200+70tk
+total: 1270tk",,
+#034,Tareq,1715115774,Matuail Jatrabari Dhaka,Dhaka,Foods,1,1270,"kalojira modhu 1kg 1200+70tk
+total: 1270tk",,
+#035,Fahreen,1521322652,"Plot No-NEO/16,Block-c,holding -730/8,khilgaon, Dhaka -1219",Dhaka,Foods,4,1450,দেশি মাঘী সরিষার তেল  (৫ লিটার)	//100,,
+#036,রাকিব,1306086762,সোয়ারীঘাট ঢাকা,Dhaka,Foods,1,1270,kalojira modhu 1kg //70,,
+#037,Jesmin Akhter,1714590483,"Address : Mirpur DOHS, road -3,house -229",Dhaka,Foods,2,1770,"Kalojira Modhu 1kg 1200 taka
+Kalojira tel 250 ml //70",,
+#038,Abir Hossain Noman,1902357772,Address : Block D Mirpur 1 Dhaka 1216,Dhaka,Foods,1,760,Ghee 500 grm//60,,
+#039,Mohin Uddin,1674874431,"H/No - 34, Road - 19, Sector - 11, Uttara, Dhaka
+Bangladesh",Dhaka,Foods,1,1320,shundorboner modhu 500g//70,,
+#040,HM Ismail,1716877966,"Address:flat no: A5, house:39, road: 8, Dhanmondi, dhaka",Dhaka,Foods,9,3050,Sorishar tel 10 litre//150,,
+#041,Saju Ahmed Dipu,1401222162,"Address:Mirpur 1,sha Ali shopping complex,chartola 108",Dhaka,Foods,2,1550,"Kalojira Modhu 1kg 1200 taka
+Sorishar tel 1 litre//60",,
+#042,Md Mehedy Hasan,1723802775,"Address:86/3 Nijhum R/A,Zigatola Dhaka-1209",Dhaka,Foods,2,1360,"Ghee half kg 700 taka
+Kalojira Modhu half kg //60",,
+#043,Sumu,1301849623,"Address:243/1 Dream corner,6th floor, rayer bazer, nimtola temple, dhanmondi 15, Dhaka",Dhaka,Foods,1,760,Ghee half kg //60,,
+#044,Imran,1684675605,"Address:  189/3, Dokkhin Jatrabari, (Nobinogor), Dhaka",Dhaka,Foods,2,2470,"Kalojirar fuler modhu 1kg 1200tk
+honey nut 1box //70",,
+#045,Tahmina Tuhin,1719007880,"Address : Shamolbag,Dakkhinkhan,dhaka",Dhaka,Foods,1,1460, Ghee  1kg  //60,,
+#046,"NAFIS MAHMOOD",1718299992,"House-29, Road-9, Sector-12, Uttara, Dhaka
+Banglad",Dhaka,Foods,1,660,Black Seed Honey/কালোজিরা মধু 500g//60,,
+#047,আজিম,1631813336,"১৮৯৫/১ পূর্ব জুরাইন, ঢাকা ১২০৪ । মিষ্টির দোকানের পাশে।এডভোকেট ড. মতিউর রহমান হাওলাদারের বাড়ি,২য় তলা। মিম বেকারির সামনে।",Dhaka,Foods,1,1270,kalozira modhu 1 kg 1200 tk +70 tk,,
+#048,MD.FARUK HOSSAIN,1716191927,"HOUSE-33,ROAD-09,NIKUNJO-2, KHILKHET,DHAKA-1229",Dhaka,Foods,1,1270,"kalojira modhu 1kg 1200+70tk
+total: 1270tk",,
+#049,MD. MIRAJ HOSSAIN,1305689698," Flat : B4 (1st building), House: 47 (Aristrocrats city), Road: 11, Kallyanpur, Dhaka",Dhaka,Foods,2,2500,"Honey nut 1 box 1200
+Kalojirar Honey 1 kg//100",,
+#050,মোঃ শাহীন,1714273392,২৮/১ মিরহাজিরবাগ গেন্ডারিয়া রেল স্টেশন বিপরীতে মিশন মাদানী এপার মেন্ট লিফট ২ (3B),Dhaka,Foods,1,1320,shondhorboner modhu 500 gm 1250 tk +70 tk,,
+#051,mh Khaled,1793532912, 1230 Sorker Super Market Road 01 Sector 10 Uttara Dhaka,Dhaka,Foods,1,1280,Honey nut 1 box 1++80,,
+#052,Lt Col Luthful,1713145062,"Alochaya Building, Nirjhor Residential Area, Dhaka Cantonment",Dhaka,Foods,4,1550,shorishar tel 5 litre 1450+100tk,,
+#053,Kamrun Naher Safali,1677250850,"Address : ection-02, Block-c, Road no-04, House no-01, Panir tengkir sathe, mirpur 2,Dhaka.",Dhaka,Foods,9,3050,shorishar tel 10 litre 2900+150tk,,

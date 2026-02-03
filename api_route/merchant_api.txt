@@ -1,0 +1,421 @@
+Success : {
+    true = "Request Accept",
+    false = "Request Reject",
+}
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/login
+    Method : POST
+    Parameter: {
+        email       : required,
+        password    : required,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        token: token,
+        merchant: merchant_info,
+    }
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/registration
+    Method : POST
+    Parameter: {
+        'company_name'      => 'required',
+        'name'              => 'required',
+        'email'             => 'required|email|unique:merchants',
+        'image'             => 'sometimes|image|max:3000',
+        'password'          => 'sometimes',
+        'address'           => 'sometimes',
+        'contact_number'    => 'required',
+        'district_id'       => 'required',
+        'upazila_id'        => 'required',
+        'area_id'           => 'required',
+        'business_address'  => 'sometimes',
+        'fb_url'            => 'sometimes',
+        'web_url'           => 'sometimes',
+        'bank_account_name' => 'sometimes',
+        'bank_account_no'   => 'sometimes',
+        'bank_name'         => 'sometimes',
+        'bkash_number'      => 'sometimes',
+        'nagad_number'      => 'sometimes',
+        'rocket_name'       => 'sometimes',
+        'nid_no'            => 'sometimes',
+        'nid_card'          => 'sometimes|image|max:3000',
+        'trade_license'     => 'sometimes|image|max:3000',
+        'tin_certificate'   => 'sometimes|image|max:3000',
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/confirmContactNumber
+    Method : POST
+    Parameter: {
+        contact_number  : required|numeric|digits:11,
+        otp_token       : required|numeric|digits:6,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        token: token,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/forgotPassword
+    Method : POST
+    Parameter: {
+        contact_number       : required|numeric|digits:11,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        token: token,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/confirmForgotPassword
+    Method : POST
+    Parameter: {
+        contact_number  : required|numeric|digits:11,
+        otp_token       : required|numeric|digits:6,
+        password        : required|min:5,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        token: token,
+    }
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/login
+    Method : POST
+    Parameter: {
+        email       : required,
+        password    : required,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        token: token,
+        merchant: merchant_info,
+    }
+
+
+
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/refresh
+    Method : POST
+    Parameter: {
+        token : token,
+    }
+    Return : {
+        new_token,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/logout
+    Method : POST
+    Parameter: {
+        token : token,
+    }
+    Return : {
+
+    }
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant
+    Method : POST
+    Parameter: {
+        token : token,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        token: token,
+        merchant: merchant_info,
+    }
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/dashboard
+    Method : get
+    Parameter: {
+        'token'              : token,
+    }
+    Return : {
+        success     : 200,
+        message     : "",
+        total_parcel      : total_parcel,
+        total_cancel_parcel  : total_cancel_parcel,
+        total_waiting_pickup_parcel  : total_waiting_pickup_parcel,
+        total_waiting_delivery_parcel  : total_waiting_delivery_parcel,
+        total_delivery_parcel  : total_delivery_parcel,
+    }
+
+
+
+    Note: 1) COD Percent : Default COD charge is merchant COD charge.
+    If merchant COD charge is empty. There service area COD charge is comes into COD charge
+          2) Delivery Charge : Default delivery charge is merchant service area charge.
+          3) If there is  merchant service area charge is 0 ,delivery charge well be weight package charge.
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/addParcel
+    Method : POST
+    Parameter: {
+        token                           : token,
+        'merchant_order_id'            => 'sometimes',
+        'cod_percent'                  => 'required',
+        'cod_charge'                   => 'required',
+        'delivery_charge'              => 'required',
+        'weight_package_charge'        => 'required',
+        'merchant_service_area_charge' => 'required',
+        'total_charge'                 => 'required',
+        'weight_package_id'            => 'required',
+        'delivery_option_id'           => 'required',
+        'product_details'              => 'required',
+        'total_collect_amount'         => 'sometimes',
+        'customer_name'                => 'required',
+        'customer_contact_number'      => 'required',
+        'customer_address'             => 'required',
+        'district_id'                  => 'required',
+        'upazila_id'                   => 'required',
+        'area_id'                      => 'sometimes',
+        'parcel_note'                  => 'sometimes',
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcel_id: parcel_inset_id,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/getParcelList
+    Method : POST
+    Parameter: {
+        'token'              : token,
+        'parcel_status'      : 'sometimes',
+        'parcel_invoice'     : 'sometimes',
+        'merchant_order_id'  : 'sometimes',
+        'customer_contact_number'  : 'sometimes',
+        'from_date'          : 'sometimes',
+        'to_date'            : 'sometimes',
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcels: parcels,
+    }
+
+    Note: parcel_status :   1_for_delivery_complete,
+                            2_for_delivery_pending,
+                            3_for_delivery_cancel
+                            4_for_payment_done
+                            5_for_payment_pending
+                            6_for_return_complete
+                            7_for_pickup_request
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/filterParcelList
+        Method : POST
+        Parameter: {
+            'token'              : token,
+            'filter_action'      : 'required',
+        }
+        Return : {
+            success: 200,
+            message: "",
+            parcels: parcels,
+        }
+
+        Note: filter_action : 'cancel'__for_cancel_parcel,
+                            'waiting_pickup'__for_waiting_pickup_parcel,
+                            'waiting_delivery'__for_waiting_delivery_parcel,
+                            'delivery'__for_total_delivery_parcel,
+                            'delivery_complete'__for_delivery_complete_parcel,
+                            'return'__for_total_return_parcel,
+                            'return_complete'__for_return_complete_parcel,
+
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/getOrderTrackingResult
+    Method : POST
+    Parameter: {
+        'token'              : token,
+        'parcel_invoice'     : 'sometimes',
+        'merchant_order_id'  : 'sometimes',
+    }
+    Return : {
+        success     : 200,
+        message     : "",
+        parcel      : parcel,
+        parcelLogs  : parcelLogs,
+    }
+
+    Note: parcel_status :
+                        1_merchant_create_parcel
+                        2_merchant_hold_parcel
+                        3_merchant_parcel_cancel
+                        4_merchant_parcel_reschedule
+                        5_pickup_branch_run_create
+                        6_pickup_branch_run_start
+                        7_pickup_branch_run_cancel
+                        8_pickup_branch_run_assign_rider_accept
+                        9_pickup_branch_run_assign_rider_reject
+                        10_pickup_branch_run_assign_rider_complete
+                        11_pickup_branch_run_complete_received
+                        12_pickup_branch_assign_delivery_branch
+                        13_pickup_branch_assign_delivery_branch_cancel
+                        14_delivery_branch_received
+                        15_delivery_branch_reject
+                        16_delivery_branch_run_create
+                        17_delivery_branch_run_start
+                        18_delivery_branch_run_cancel
+                        19_delivery_branch_run_assign_rider_accept
+                        20_delivery_branch_run_assign_rider_reject
+                        21_delivery_branch_run_assign_rider_complete_delivery
+                        22_delivery_branch_run_assign_rider_partial_delivery
+                        23_delivery_branch_run_assign_rider_reschedule
+                        24_delivery_branch_run_assign_rider_return
+                        25_delivery_branch_run_complete
+                        26_delivery_branch_return_parcel_to_pickup_branch
+                        27_pickup_branch_return_parcel_received
+                        28_pickup_branch_return_parcel_reject
+                        29_pickup_branch_return_parcel_run_create
+                        30_pickup_branch_return_parcel_run_start
+                        31_pickup_branch_return_parcel_run_cancel
+                        32_pickup_branch_return_parcel_run_rider_accept
+                        33_pickup_branch_return_parcel_run_rider_reject
+                        34_pickup_branch_return_parcel_run_rider_complete
+                        35_pickup_branch_return_parcel_run_complete
+
+
+
+   Note: Only allow for Parcel Status = (1,2,4,5,6,7,8,9,10);
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/parcelCancel
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success : 200,
+        message : "",
+    }
+
+
+   Note: Only allow for Parcel Status = (2,4);
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/parcelStart
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success : 200,
+        message : "",
+    }
+
+
+
+   Note: Only allow for Parcel Status = (1);
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/parcelHold
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success : 200,
+        message : "",
+    }
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/viewParcel
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success : 200,
+        message : "",
+    }
+
+
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/getDeliveryPaymentList
+    Method : POST
+    Parameter: {
+        'token'       : token,
+        'status'      : 'sometimes',
+        'from_date'   : 'sometimes',
+        'to_date'     : 'sometimes',
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcelMerchantDeliveryPayments: parcelMerchantDeliveryPayments,
+    }
+
+    Note: status : 1_for_delivery_payment_send,
+                        2_for_accept,
+                        3_for_cancel,
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/getDeliveryPayment
+    Method : POST
+    Parameter: {
+        'token'       : token,
+        'id'     : 'required',
+    }
+    Return : {
+        success: 200,
+        message: "",
+        delivery_payment: delivery_payment,
+        delivery_payment_details: delivery_payment_details,
+    }
+
+
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/merchant/getParcelPaymentList
+    Method : POST
+    Parameter: {
+        'token'       : token,
+        'status'      : 'sometimes',
+        'from_date'   : 'sometimes',
+        'to_date'     : 'sometimes',
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcelMerchantDeliveryPayments: parcelMerchantDeliveryPayments,
+    }
+
+    Note: status :  0 All Delivery Type
+                    1 for Complete Delivery,
+                    2 for Partial Delivery
+                    3 for Return Parcel
+                    4 for Waiting For Pickup
+                    5 for Waiting For Delivery
+                    6 for Waiting For Return Parcel
+
+
+
+
+

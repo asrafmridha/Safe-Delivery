@@ -1,0 +1,368 @@
+
+    URL: https://beaconcourier.com.bd/software/api/rider/login
+    Method : POST
+    Parameter: {
+        email       : required,
+        password    : required,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        token: token,
+        rider: rider_info,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/rider/refresh
+    Method : POST
+    Parameter: {
+        token : token,
+    }
+    Return : {
+        new_token,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/rider/logout
+    Method : POST
+    Parameter: {
+        token : token,
+    }
+    Return : {
+
+    }
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/rider
+    Method : POST
+    Parameter: {
+        token : token,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        token: token,
+        rider: rider_info,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/rider/dashboard
+    Method : get
+    Parameter: {
+        'token'              : token,
+    }
+    Return : {
+        success     : 200,
+        message     : "",
+    }
+
+
+    Note: Return parcel parcel_status : 6,8;
+
+    URL: https://beaconcourier.com.bd/software/api/rider/getPickupParcelList
+    Method : POST
+    Parameter: {
+        'token'  : token,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcels: parcels,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/rider/getPickupParcel
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcel: parcel,
+    }
+
+
+
+    Note: Only allow for Parcel Status = 6; success return parcel parcel_status : 8;
+
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelPickupRequestAccept
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success : 200,
+        message : "",
+    }
+
+
+    Note: Only allow for Parcel Status = 6;
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelPickupRequestReject
+    Method : POST
+    Parameter: {
+        'token'     : token,
+        'parcel_id' : required,
+        'note'      : sometimes,
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+
+
+
+    Note: Only allow for Parcel Status = 6, 8;
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelPickupReschedule
+    Method : POST
+    Parameter: {
+        'token'     : token,
+        'parcel_id' : required,
+        'note'      : sometimes,
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+
+
+
+    Note: Only allow for Parcel Status = 8;
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelPickupComplete
+    Method : POST
+    Parameter: {
+        'token'     : token,
+        'parcel_id' : required,
+        'note'      : sometimes,
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+
+
+
+
+    Note: Return parcel parcel_status : 17,19;
+
+    URL: https://beaconcourier.com.bd/software/api/rider/getDeliveryParcelList
+    Method : POST
+    Parameter: {
+        'token'  : token,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcels: parcels,
+    }
+
+
+    URL: https://beaconcourier.com.bd/software/api/rider/getDeliveryParcel
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcel: parcel,
+    }
+
+
+
+    Note: Only allow for Parcel Status = 17; success return parcel parcel_status : 19;
+
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelDeliveryRequestAccept
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success : 200,
+        message : "",
+    }
+
+
+    Note: Only allow for Parcel Status = 17;
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelDeliveryRequestReject
+    Method : POST
+    Parameter: {
+        'token'     : token,
+        'parcel_id' : required,
+        'note'      : sometimes,
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+
+
+    Note: Only allow for Parcel Status = 19;
+    URL: https://beaconcourier.com.bd/software/api/rider/returnConfirmParcelCode
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+        'parcel_code'   : required,
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+
+
+
+    Note:
+        Send Customer OTP;
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelDeliveryOtpSendCustomer
+    Method : POST
+    Parameter: {
+        'token'                   : token,
+        'parcel_id'               : 'required'
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+    
+    
+    Note:
+        Only allow for Parcel Status = 19;
+        delivery_type = (21,22,23,24)
+
+        21 for Complete Delivery
+            (
+                parcel_code             = customer otp number,
+                customer_collect_amount = customer total collectable amount,
+            )
+        22 for Partial Delivery
+            (
+                parcel_code             = customer otp number,
+            )
+        23 for Reschedule
+            (
+                reschedule_date             = reschedule date,
+            )
+        24 for Return
+            (
+                parcel_note             = Return note,
+            )
+
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelDeliveryComplete
+    Method : POST
+    Parameter: {
+        'token'                   : token,
+        'parcel_id'               : 'required',
+        'delivery_type'           : 'required',
+        'customer_collect_amount' : 'sometimes',
+        'parcel_code'             : 'sometimes',
+        'reschedule_date'         : 'sometimes',
+        'parcel_note'             : 'sometimes',
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+
+
+
+
+    Note: Return parcel parcel_status : 31,33;
+
+    URL: https://beaconcourier.com.bd/software/api/rider/getReturnParcelList
+    Method : POST
+    Parameter: {
+        'token'  : token,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcels: parcels,
+    }
+
+
+
+    URL: https://beaconcourier.com.bd/software/api/rider/getReturnParcel
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcel: parcel,
+    }
+
+    Note: Only allow for Parcel Status = 31; success return parcel parcel_status : 33;
+
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelReturnRequestAccept
+    Method : POST
+    Parameter: {
+        'token'         : token,
+        'parcel_id'     : required,
+    }
+    Return : {
+        success : 200,
+        message : "",
+    }
+
+
+
+
+    Note: Only allow for Parcel Status = 31;
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelReturnRequestReject
+    Method : POST
+    Parameter: {
+        'token'     : token,
+        'parcel_id' : required,
+        'note'      : sometimes,
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+
+
+
+    Note: Only allow for Parcel Status = 33;
+    URL: https://beaconcourier.com.bd/software/api/rider/parcelReturnComplete
+    Method : POST
+    Parameter: {
+        'token'     : token,
+        'parcel_id' : required,
+        'note'      : sometimes,
+    }
+    Return : {
+        success: 200,
+        message: "",
+    }
+
+
+   URL: https://beaconcourier.com.bd/software/api/rider/collectionParcelList
+    Method : POST
+    Parameter: {
+        'token'         : token,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcels: parcels,
+    }
+
+
+   URL: https://beaconcourier.com.bd/software/api/rider/paidAmountParcelList
+    Method : POST
+    Parameter: {
+        'token'         : token,
+    }
+    Return : {
+        success: 200,
+        message: "",
+        parcels: parcels,
+    }

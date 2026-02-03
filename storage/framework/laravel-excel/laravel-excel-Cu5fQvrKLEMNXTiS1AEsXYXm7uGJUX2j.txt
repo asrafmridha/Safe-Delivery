@@ -1,0 +1,4 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+#753990375562-01,Nahidul Ismal,1711556633,Al-amin road. House no :44.  Thana : kalabagan. ,Dhamrai,Cloth,1 kg to 2 kg,73232,
+#753990375562-02,Nahidul Ismal,1711556634,Al-amin road. House no :44.  Thana : kalabagan. ,Dhamrai,Cloth,2 kg to 2 kg,73233,
+#753990375562-03,Nahidul Ismal,1711556635,Al-amin road. House no :44.  Thana : kalabagan. ,Dhamrai,Cloth,3 kg to 2 kg,73234,

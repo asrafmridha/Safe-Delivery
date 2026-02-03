@@ -1,0 +1,3 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark,Service Type,Item Type
+#007,Hasem,1676637888,"Jatrabari, Dhaka",Jatrabari,Sweet,5 kg,1250,Home Delivery,Express Delivery,Sweet
+#009,"Shirin Akter		",1676834937,99 manik nogor. miajan lane. Dhaka,Gulshan,Sweet,10 kg,1500,Home Delivery,Same Day Delivery ,Sweet

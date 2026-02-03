@@ -1,0 +1,2 @@
+Merchant ID,Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+M-0069,RFD6645,Arman,01794218124,"Dom-Inno planeta, flat c8, 27-28/1, voter goli green road,dhaka 1205",Dhamrai,Oil,5Kg,4500,

@@ -1,0 +1,157 @@
+@media print {
+    @page {
+        width: 76.2mm;
+        height: 101.6mm;
+        /*size: 76.2mm 101.6mm;*/
+        margin: 5px 0 0 0;
+    }
+    /*@page { size : landscape; }*/
+
+    /*@page {*/
+    /*size: 60mm 40mm; !* landscape *!*/
+    /*!* you can also specify margins here: *!*/
+    /*!*margin: 25mm;*!*/
+    /*!*margin-right: 45mm; !* for compatibility with both A4 and Letter *!*!*/
+    /*}*/
+
+    body {
+        font-size: 12px;
+        position: relative;
+    }
+    /*.qr_code {*/
+        /*position: absolute;*/
+        /*right:0;*/
+        /*top:0;*/
+    /*}*/
+    /*.qr_code img.img-qr_code {*/
+        /*height: 35px !important;*/
+        /*width: 35px !important;*/
+    /*}*/
+    .top_info {
+        text-align: center !important;
+    }
+    .top_info td.align-left{
+        text-align: left !important;
+    }
+    table td.align-left{
+        text-align: left !important;
+    }
+
+    table td p.align-center{
+        text-align: center !important;
+    }
+
+    .top_info td.logo_td {
+        /*text-align: left !important;*/
+    }
+
+    .top_info td img.logo {
+        height: 30px !important;
+        width: auto;
+    }
+
+    .top_info td img.img-bar_code {
+        margin-top: 5px !important;
+        margin-bottom: 2px !important;
+        height: 35px !important;
+        width: 95% !important;
+    }
+
+    .top_info td img.img-qr_code {
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    .top_info td p {
+        margin-top: 0 !important;
+        margin-bottom: 2px !important;
+        line-height: 0.5 !important;
+        font-size: 12px !important;
+    }
+
+    .top_info td p.date {
+        margin-top: 3px !important;
+    }
+
+    .merchant_info {
+        /*text-align: center;*/
+        margin-top: 5px !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+    .merchant_info table {
+        text-align: left !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    /*.merchant_info table td, .merchant_info table th {*/
+        /*padding-left: 0 !important;*/
+    /*}*/
+
+    .merchant_info table tr th, .merchant_info table tr td {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+        line-height: 1 !important;
+    }
+    .merchant_info table tr th{
+        width: 30% !important;
+    }
+
+    .merchant_info table tr td:last-child{
+        width: 65% !important;
+    }
+
+    .customer_info {
+        /*text-align: center;*/
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+    .customer_info table {
+        text-align: left !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .customer_info table tr th, .customer_info table tr td {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+        line-height: 1 !important;
+    }
+
+    .customer_info table tr th{
+        width: 30% !important;
+    }
+
+    .customer_info table tr td:last-child{
+        width: 65% !important;
+    }
+
+    .qr_code {
+        margin-top: 5px !important;
+    }
+
+    .borderless>thead>tr>th{
+        border: 1px solid #fff !important;
+    }
+    .borderless>tbody>tr>td,
+    .borderless>tbody>tr>th,
+    .borderless>tfoot>tr>td,
+    .borderless>tfoot>tr>th,
+    .borderless>thead>tr>td,
+    .borderless>thead>tr>th{
+        border: 1px solid #fff !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .table {
+        margin-bottom: .0rem !important;
+    }
+    .table td, .table th {
+        padding: .0rem !important;
+    }
+
+
+}

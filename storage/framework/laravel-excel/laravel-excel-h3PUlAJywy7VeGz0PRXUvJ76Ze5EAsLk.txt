@@ -1,0 +1,13 @@
+Order Id,Name,Phone,Address,Area,Product Details,Weight,Collection Amount,Remark
+MG-11201,Nurjahan Chowdhury,1683060686,"House. -1,Road -13/D, Sec - 6,Uttara., Dhaka",UTTARA,DUCK,1,780,
+MG-11203,MD. Sarwar Hossain,1733752816,"Road no--15, House no--25, Sactor--4, Uttara",UTTARA,DUCK,1,780,
+MG-11204,Saima Akter Sumi,1885554131,"Eden Mohila College, Azimpur Dhaka",AZIMPUR,DUCK,1,780,
+MG-11205,MD Islam,??????????,"? ??,????? ??????, ??????, ???? ????",GULSHAN,DUCK,1,780,
+MG-11207,MAHMUDA,1842911188,"374/ DILU ROAD, MOGBAZAR, DHAKA",MOGBAZAR,DUCK,1,1700,DELIVERY MUST BE 11:30
+MG-11208,Sanjida Sanju,1305513718,"House No. 130, Road No. 04, Block J, Bashundhara Residential",BASHUNDHARA,DUCK,1,770,DELIVERY MUST BE 11:31
+MG-11209,Md Jashim Uddin Bablu,1688807258,"H-6, R-1,Block-B, Nolbug, ?????? ?????? ???, ?? ??????? ??????",UTTARA,DUCK,1,780,
+MG-11211,Salma akter,1795656481,"mirpur 1, uttar pirerbag chapra mosjid mor, abu bakar madrasa, h-363/8,",MIRPUR,DUCK,1,880,
+MG-11213,MD Borkutllua,1916297696,?????? ?? ??? ??????? ????? ??? ??? ???? ???,MIRPUR,DUCK,1,780,
+MG-11219,Qazi Asif,1711817447,"H-52/A, R-11/A, Apt-5/A, Dhanmondi",DHANMONDI,DUCK,1,1130,
+MG-11221,Jesmin Akter,1971104819,"F-D4, H-461, Wasa Goli, Shewrapara",MIRPUR,DUCK,1,780,
+MG-11224,Abu Zafar Nirob,1866519264,"A/3 A4 Alif housing, Adabor 6no roader mathay",ADABOR,DUCK,1,780,

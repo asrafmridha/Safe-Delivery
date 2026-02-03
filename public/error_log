@@ -1,0 +1,9 @@
+[07-Dec-2025 08:33:06 Asia/Dhaka] PHP Deprecated:  Required parameter $method follows optional parameter $headers in /home/safedelivery/public_html/app/Http/Controllers/Controller.php on line 923
+[07-Dec-2025 08:33:06 Asia/Dhaka] PHP Deprecated:  Required parameter $url follows optional parameter $headers in /home/safedelivery/public_html/app/Http/Controllers/Controller.php on line 923
+[07-Dec-2025 08:33:06 Asia/Dhaka] PHP Deprecated:  Required parameter $data follows optional parameter $headers in /home/safedelivery/public_html/app/Http/Controllers/Controller.php on line 923
+[07-Dec-2025 18:02:34 Asia/Dhaka] PHP Deprecated:  Required parameter $method follows optional parameter $headers in /home/safedelivery/public_html/app/Http/Controllers/Controller.php on line 923
+[07-Dec-2025 18:02:34 Asia/Dhaka] PHP Deprecated:  Required parameter $url follows optional parameter $headers in /home/safedelivery/public_html/app/Http/Controllers/Controller.php on line 923
+[07-Dec-2025 18:02:34 Asia/Dhaka] PHP Deprecated:  Required parameter $data follows optional parameter $headers in /home/safedelivery/public_html/app/Http/Controllers/Controller.php on line 923
+[25-Jan-2026 02:37:59 Asia/Dhaka] PHP Deprecated:  Required parameter $method follows optional parameter $headers in /home/safedelivery/public_html/app/Http/Controllers/Controller.php on line 941
+[25-Jan-2026 02:37:59 Asia/Dhaka] PHP Deprecated:  Required parameter $url follows optional parameter $headers in /home/safedelivery/public_html/app/Http/Controllers/Controller.php on line 941
+[25-Jan-2026 02:37:59 Asia/Dhaka] PHP Deprecated:  Required parameter $data follows optional parameter $headers in /home/safedelivery/public_html/app/Http/Controllers/Controller.php on line 941
