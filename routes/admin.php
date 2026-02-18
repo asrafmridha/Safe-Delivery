@@ -265,6 +265,9 @@ Route::group(['middleware' => 'admin', 'prefix' => 'admin/'], function () {
     Route::get('parcel/printAllParcelList', [App\Http\Controllers\Admin\ParcelController::class, 'printAllParcelList'])->name('parcel.printAllParcelList');
     Route::get('parcel/excelAllParcelList', [App\Http\Controllers\Admin\ParcelController::class, 'excelAllParcelList'])->name('parcel.excelAllParcelList');
     Route::get('parcel/orderTracking', [App\Http\Controllers\Admin\ParcelController::class, 'orderTracking'])->name('parcel.orderTracking');
+     Route::get('parcel/branch_wise_parcel_report', [App\Http\Controllers\Admin\ParcelController::class, 'branch_wise_parcel_report'])->name('parcel.branch_wise_parcel_report');
+     Route::get('parcel/today_parcel_for_delivery', [App\Http\Controllers\Admin\ParcelController::class, 'today_parcel_for_delivery'])->name('parcel.today_parcel_for_delivery');
+          Route::get('parcel/merchant_today_pickup', [App\Http\Controllers\Admin\ParcelController::class, 'merchant_today_pickup'])->name('parcel.merchant_today_pickup');
 
     Route::get('parcel/orderTracking/{parcel_invoice?}', [App\Http\Controllers\Admin\ParcelController::class, 'orderTracking'])->name('parcel.orderTracking');
     Route::post('parcel/returnOrderTrackingResult', [App\Http\Controllers\Admin\ParcelController::class, 'returnOrderTrackingResult'])->name('parcel.returnOrderTrackingResult');

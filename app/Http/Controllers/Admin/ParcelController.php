@@ -22,6 +22,8 @@ use Illuminate\Support\Facades\Validator;
 use Maatwebsite\Excel\Facades\Excel;
 use Yajra\DataTables\DataTables;
 use Yajra\DataTables\Html\Button;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class ParcelController extends Controller
 {
@@ -49,7 +51,6 @@ class ParcelController extends Controller
                 $class = $parcelStatus['class'];
 
                 return '<span class=" text-bold text-' . $class . '" style="font-size:16px;"> ' . $status_name . '</span>';
-
             })
             ->addColumn('action', function ($data) {
                 $button = '<a href="' . route('parcel.printParcel', $data->id) . '" class="btn btn-success btn-sm" title="Print Pickup Parcel" target="_blank">
@@ -97,7 +98,7 @@ class ParcelController extends Controller
 
     public function getAllParcelList(Request $request)
     {
-//        dd($request->input('parcel_status'));
+        //        dd($request->input('parcel_status'));
         $model = Parcel::with([
             'district:id,name',
             'upazila:id,name',
@@ -117,39 +118,39 @@ class ParcelController extends Controller
         if ($request->has('merchant_id') && !is_null($request->get('merchant_id')) && $request->get('merchant_id') != 0) {
             $model->where('merchant_id', $request->get('merchant_id'));
         }
-        
+
         if ($request->has('parcel_status') && !is_null($parcel_status) && $parcel_status != 0 && $parcel_status == 13) {
-            
+
             if ($request->has('delivery_branch_id') && !is_null($request->get('delivery_branch_id')) && $request->get('delivery_branch_id') != 0) {
                 $model->whereRaw('pickup_branch_id = ' . $request->input('delivery_branch_id'));
             }
-        }elseif ($request->has('parcel_status') && !is_null($parcel_status) && $parcel_status != 0 && $parcel_status == 9) {
+        } elseif ($request->has('parcel_status') && !is_null($parcel_status) && $parcel_status != 0 && $parcel_status == 9) {
             if ($request->has('delivery_branch_id') && !is_null($request->get('delivery_branch_id')) && $request->get('delivery_branch_id') != 0) {
                 $model->whereRaw('pickup_branch_id = ' . $request->input('delivery_branch_id'));
             }
-        }elseif ($request->has('parcel_status') && !is_null($parcel_status) && $parcel_status != 0 && $parcel_status == 14) {
+        } elseif ($request->has('parcel_status') && !is_null($parcel_status) && $parcel_status != 0 && $parcel_status == 14) {
             if ($request->has('delivery_branch_id') && !is_null($request->get('delivery_branch_id')) && $request->get('delivery_branch_id') != 0) {
-                
+
                 $deliveryBranchId = $request->input('delivery_branch_id');
                 $model->whereHas('merchant', function ($query) use ($deliveryBranchId) {
                     $query->where('on_board_branch_id', $deliveryBranchId);
                 });
             }
-        }else{
-           if ($request->has('delivery_branch_id') && !is_null($request->get('delivery_branch_id')) && $request->get('delivery_branch_id') != 0) {
+        } else {
+            if ($request->has('delivery_branch_id') && !is_null($request->get('delivery_branch_id')) && $request->get('delivery_branch_id') != 0) {
                 $model->whereRaw('delivery_branch_id = ' . $request->input('delivery_branch_id'));
-            } 
+            }
         }
-        
-        
+
+
         if ($request->has('parcel_invoice') && !is_null($request->get('parcel_invoice')) && $request->get('parcel_invoice') != 0) {
 
             $parcel_invoice = $request->get('parcel_invoice');
-            $model->where('parcel_invoice','like', "{$parcel_invoice}");
-            $model->orWhere('merchant_order_id','like', "{$parcel_invoice}");
-            $model->orWhere('customer_contact_number','like', "%{$parcel_invoice}%");
-            $model->orWhere('customer_name','like', "%{$parcel_invoice}%");
-            $model->orWhere('customer_address','like', "%{$parcel_invoice}%");
+            $model->where('parcel_invoice', 'like', "{$parcel_invoice}");
+            $model->orWhere('merchant_order_id', 'like', "{$parcel_invoice}");
+            $model->orWhere('customer_contact_number', 'like', "%{$parcel_invoice}%");
+            $model->orWhere('customer_name', 'like', "%{$parcel_invoice}%");
+            $model->orWhere('customer_address', 'like', "%{$parcel_invoice}%");
         }
 
         /*if ($request->has('merchant_order_id') && !is_null($request->get('merchant_order_id')) && $request->get('merchant_order_id') != 0) {
@@ -190,14 +191,14 @@ class ParcelController extends Controller
         if ($request->has('parcel_status') && !is_null($parcel_status) && $parcel_status != 0) {
             if ($parcel_status == 1) {
                 // $model->whereRaw('status >= 25 and delivery_type in (1,2) and payment_type IS NULL');
-//                $model->whereRaw('delivery_branch_id != "" and status >= 25 and delivery_type in (1,2)');
+                //                $model->whereRaw('delivery_branch_id != "" and status >= 25 and delivery_type in (1,2)');
                 $model->whereRaw('status >= 25 and delivery_type in (1,2)');
             } elseif ($parcel_status == 2) {
                 // $query->whereRaw('status in (14,16,17,18,19,20,21,22,23,24 ) and delivery_type not in (1,2,4)');
                 // $model->whereRaw('status > 11 and delivery_type in (?)', [3]);
-//                $model->whereRaw('delivery_branch_id != "" and status >= 11 and status <= 25 and delivery_type IS NULL OR (status in (23,25) and delivery_type = 3)');
+                //                $model->whereRaw('delivery_branch_id != "" and status >= 11 and status <= 25 and delivery_type IS NULL OR (status in (23,25) and delivery_type = 3)');
                 $model->whereRaw('status >= 11 and status <= 25 and (delivery_type IS NULL OR (status in (23,25) and delivery_type = 3))');
-              //  $model->whereRaw('delivery_branch_id != "" and status >= 11 and status <= 25 and delivery_type IS NULL OR (status in (23,25) and delivery_type = 3)');
+                //  $model->whereRaw('delivery_branch_id != "" and status >= 11 and status <= 25 and delivery_type IS NULL OR (status in (23,25) and delivery_type = 3)');
 
             } elseif ($parcel_status == 3) {
                 // $query->whereRaw('status = 3');
@@ -221,16 +222,14 @@ class ParcelController extends Controller
                 $model->whereRaw('status in (21)');
             } elseif ($parcel_status == 12) {
                 $model->whereRaw('status >= 25 and delivery_type in(3)');
-            }elseif ($parcel_status == 13) {
+            } elseif ($parcel_status == 13) {
                 $model->whereRaw('status >= 11');
-            }elseif ($parcel_status == 14) {
+            } elseif ($parcel_status == 14) {
                 $model->whereRaw('status >= 11');
             }
-            
-            
         }
 
-//        dd($model->toSql());
+        //        dd($model->toSql());
         return DataTables::of($model)
             ->addIndexColumn()
             /*->editColumn('date_time', function ($data) {
@@ -303,7 +302,7 @@ class ParcelController extends Controller
                 if ($data->status >= 25) {
                     if ($data->delivery_type == 3) {
                         $date_time = date("Y-m-d", strtotime($data->reschedule_parcel_date));
-                    } elseif ($data->delivery_type == 1 || $data->delivery_type == 2 ) {
+                    } elseif ($data->delivery_type == 1 || $data->delivery_type == 2) {
                         $date_time = date("Y-m-d", strtotime($data->delivery_date));
                     } elseif ($data->delivery_type == 4) {
                         $date_time = date("Y-m-d", strtotime($data->delivery_rider_date));
@@ -317,35 +316,35 @@ class ParcelController extends Controller
                 $status_name = $parcelStatus['status_name'];
                 $class = $parcelStatus['class'];
 
-                $status_data= ((date("Y-m-d H:i:s") >= date("Y-m-d H:i:s", strtotime("+24 hours", strtotime($data->created_at))))&&($data->status<25)) ? '<span class="text-bold badge badge-' . $class . '" style="font-size:16px;"> ' . $status_name . '</span> <p><strong>Date: </strong>' . $date_time . '</p><p style="    background: #e55555;
+                $status_data = ((date("Y-m-d H:i:s") >= date("Y-m-d H:i:s", strtotime("+24 hours", strtotime($data->created_at)))) && ($data->status < 25)) ? '<span class="text-bold badge badge-' . $class . '" style="font-size:16px;"> ' . $status_name . '</span> <p><strong>Date: </strong>' . $date_time . '</p><p style="    background: #e55555;
                 margin: auto;
                 margin-top: 10px;
                 width: fit-content;
                 padding: 2px 5px;
                 border-radius: 15px;
                 font-size:10px;
-                
-                color: #fff;">' . '24 hours exceed'
-                // color: #fff;">' . '24 hours exceed & <br>  delivery not complete'
 
-                . '</p>' : '<span class="text-bold badge badge-' . $class . '" style="font-size:16px;"> ' . $status_name . '</span> <p><strong>Date: </strong>' . $date_time . '</p>';
-                
-                if($data->return_branch){
-                   $status_data.=optional($data->return_branch)->name; 
-                }elseif($data->delivery_branch){
-                   $status_data.=optional($data->delivery_branch)->name; 
-                }elseif($data->pickup_branch){
-                   $status_data.=optional($data->pickup_branch)->name; 
+                color: #fff;">' . '24 hours exceed'
+                    // color: #fff;">' . '24 hours exceed & <br>  delivery not complete'
+
+                    . '</p>' : '<span class="text-bold badge badge-' . $class . '" style="font-size:16px;"> ' . $status_name . '</span> <p><strong>Date: </strong>' . $date_time . '</p>';
+
+                if ($data->return_branch) {
+                    $status_data .= optional($data->return_branch)->name;
+                } elseif ($data->delivery_branch) {
+                    $status_data .= optional($data->delivery_branch)->name;
+                } elseif ($data->pickup_branch) {
+                    $status_data .= optional($data->pickup_branch)->name;
                 }
-                
+
                 return $status_data;
-                
-                
-                
-                
-                
-                
-               // return '<span class="  text-bold badge badge-' . $class . '" style="font-size:16px;"> ' . $status_name . '</span> <p><strong>Date: </strong>' . $date_time . '</p>';
+
+
+
+
+
+
+                // return '<span class="  text-bold badge badge-' . $class . '" style="font-size:16px;"> ' . $status_name . '</span> <p><strong>Date: </strong>' . $date_time . '</p>';
             })
             ->editColumn('payment_status', function ($data) {
                 $parcelStatus = returnPaymentStatusForAdmin($data->status, $data->delivery_type, $data->payment_type);
@@ -367,13 +366,13 @@ class ParcelController extends Controller
                 $button .= '&nbsp; <button class="btn btn-secondary btn-sm view-modal" data-toggle="modal" data-target="#viewModal" parcel_id="' . $data->id . '}" >
                 <i class="fa fa-eye"></i> </button>';
 
-                if (auth()->guard('admin')->user()->type == 1 && in_array($data->status, [1,2,3,4, 5,7,11,13,14,15,18,25,27,28,29,32,36] ) ) {
+                if (auth()->guard('admin')->user()->type == 1 && in_array($data->status, [1, 2, 3, 4, 5, 7, 11, 13, 14, 15, 18, 25, 27, 28, 29, 32, 36])) {
                     $button .= '&nbsp; <a href="' . route('admin.parcel.editParcel', $data->id) . '" class="btn btn-success btn-sm"> <i class="fa fa-edit"></i> </a>';
                 }
 
                 if (auth()->guard('admin')->user()->type == 1 && $data->status < 3 || $data->status == 9) {
-                //     $button .= '&nbsp; <button class="btn btn-danger btn-sm delete-btn" parcel_id="' . $data->id . '" >
-                // <i class="fa fa-trash"></i> </button>';
+                    //     $button .= '&nbsp; <button class="btn btn-danger btn-sm delete-btn" parcel_id="' . $data->id . '" >
+                    // <i class="fa fa-trash"></i> </button>';
                 }
 
                 return $button;
@@ -390,7 +389,7 @@ class ParcelController extends Controller
             ->addColumn('company_info', function ($data) {
                 $company_info = '<p><strong>Name: </strong>' . $data->merchant->company_name . '</p>';
                 $company_info .= '<p><strong>Phone: </strong>' . $data->merchant->contact_number . '</p>';
-//                $company_info .= '<span><strong>Address: </strong>'.$data->merchant->address.'</span>';
+                //                $company_info .= '<span><strong>Address: </strong>'.$data->merchant->address.'</span>';
                 return $company_info;
             })
             ->addColumn('customer_info', function ($data) {
@@ -549,7 +548,7 @@ class ParcelController extends Controller
 
     public function excelAllParcelList(Request $request)
     {
-        $fileName= 'parcel_'.time().'.xlsx';
+        $fileName = 'parcel_' . time() . '.xlsx';
         return Excel::download(new AdminParcelExport($request), $fileName);
     }
 
@@ -627,7 +626,8 @@ class ParcelController extends Controller
         $data['weightPackages'] = WeightPackage::with([
             'service_area' => function ($query) use ($service_area_id) {
                 $query->where('service_area_id', '=', $service_area_id);
-            }])
+            }
+        ])
             ->where([
                 ['status', '=', 1],
                 ['weight_type', '=', 1]
@@ -648,8 +648,8 @@ class ParcelController extends Controller
             'delivery_charge' => 'required',
             'total_charge' => 'required',
             'weight_package_id' => 'required',
-//            'delivery_option_id' => 'required',
-//            'product_details' => 'required',
+            //            'delivery_option_id' => 'required',
+            //            'product_details' => 'required',
             'product_value' => 'sometimes',
             'total_collect_amount' => 'sometimes',
             'customer_name' => 'required',
@@ -665,7 +665,7 @@ class ParcelController extends Controller
         }
 
         $data = [
-            
+
             'pickup_branch_id' => $request->input('pickup_branch_id'),
             'pickup_rider_id' => $request->input('pickup_rider_id'),
             'delivery_branch_id' => $request->input('delivery_branch_id'),
@@ -692,7 +692,7 @@ class ParcelController extends Controller
             'cod_percent' => $request->input('cod_percent'),
             'cod_charge' => $request->input('cod_charge'),
             'total_charge' => $request->input('total_charge'),
-//            'delivery_option_id' => $request->input('delivery_option_id'),
+            //            'delivery_option_id' => $request->input('delivery_option_id'),
             'parcel_note' => $request->input('parcel_note'),
             'merchant_order_id' => $request->input('merchant_order_id'),
             'service_type_id' => $request->input('service_type_id') == 0 ? null : $request->input('service_type_id'),
@@ -701,7 +701,7 @@ class ParcelController extends Controller
             'service_type_charge' => $request->input('service_type_charge'),
             'updated_admin_id' => auth()->guard('admin')->user()->id,
         ];
-//        dd($data);
+        //        dd($data);
 
 
         $check = Parcel::where('id', $parcel->id)->update($data) ? true : false;
@@ -723,7 +723,6 @@ class ParcelController extends Controller
             $this->setMessage('Parcel Update Failed', 'danger');
             return redirect()->back()->withInput();
         }
-
     }
 
 
@@ -739,17 +738,17 @@ class ParcelController extends Controller
     }
 
 
-//    public function destroy(Request $request, Parcel $parcel) {
-//        $check = $parcel->delete() ? true : false;
-//
-//        if ($check) {
-//            $this->setMessage('Parcel Delete Successfully', 'success');
-//        } else {
-//            $this->setMessage('Parcel Delete Failed', 'danger');
-//        }
-//
-//        return redirect()->route('admin.parcel.parcelList');
-//    }
+    //    public function destroy(Request $request, Parcel $parcel) {
+    //        $check = $parcel->delete() ? true : false;
+    //
+    //        if ($check) {
+    //            $this->setMessage('Parcel Delete Successfully', 'success');
+    //        } else {
+    //            $this->setMessage('Parcel Delete Failed', 'danger');
+    //        }
+    //
+    //        return redirect()->route('admin.parcel.parcelList');
+    //    }
 
     public function delete(Request $request)
     {
@@ -799,9 +798,17 @@ class ParcelController extends Controller
         $merchant_order_id = $request->input('merchant_order_id');
 
         if ((!is_null($parcel_invoice) && $parcel_invoice != '') || (!is_null($merchant_order_id) && $merchant_order_id != '')) {
-            $parcel = Parcel::with('district', 'upazila', 'area', 'merchant',
-                'weight_package', 'pickup_branch', 'pickup_rider',
-                'delivery_branch', 'delivery_rider')
+            $parcel = Parcel::with(
+                'district',
+                'upazila',
+                'area',
+                'merchant',
+                'weight_package',
+                'pickup_branch',
+                'pickup_rider',
+                'delivery_branch',
+                'delivery_rider'
+            )
                 ->where(function ($query) use ($parcel_invoice, $merchant_order_id) {
                     if (!is_null($parcel_invoice)) {
                         $query->where('parcel_invoice', 'like', "%$parcel_invoice");
@@ -811,8 +818,14 @@ class ParcelController extends Controller
                 })
                 ->first();
             if ($parcel) {
-                $parcelLogs = ParcelLog::with('pickup_branch', 'pickup_rider', 'delivery_branch',
-                    'delivery_rider', 'admin', 'merchant')
+                $parcelLogs = ParcelLog::with(
+                    'pickup_branch',
+                    'pickup_rider',
+                    'delivery_branch',
+                    'delivery_rider',
+                    'admin',
+                    'merchant'
+                )
                     ->where('parcel_id', $parcel->id)
                     ->orderBy('id', 'desc')
                     ->get();
@@ -820,7 +833,117 @@ class ParcelController extends Controller
                 return view('admin.parcel.orderTrackingResult', compact('parcel', 'parcelLogs'));
             }
         }
+    }
+    public function branch_wise_parcel_report(Request $request)
+    {
+        $data = [];
+        $data['main_menu']  = 'parcel';
+        $data['child_menu'] = 'branch_wise_parcel_report';
+        $data['page_title'] = 'Branch Wise Parcel Report';
+        $data['collapse']   = 'sidebar-collapse';
+
+        $from = $request->from_date ?? date('Y-m-d');
+        $to   = $request->to_date ?? date('Y-m-d');
+
+        $data['from'] = $from;
+        $data['to']   = $to;
+
+        $data['branches'] = DB::table('branches')
+            ->leftJoin('parcels', function ($join) use ($from, $to) {
+                $join->on('branches.id', '=', 'parcels.delivery_branch_id')
+                    ->whereBetween('parcels.date', [$from, $to]);
+            })
+            ->select(
+                'branches.id',
+                'branches.name',
+
+                // Picked Up
+                DB::raw("SUM(CASE WHEN parcels.status IN (10,11) THEN 1 ELSE 0 END) as picked_count"),
+                DB::raw("SUM(CASE WHEN parcels.status IN (10,11) THEN parcels.total_charge ELSE 0 END) as picked_amount"),
+
+                // Received
+                DB::raw("SUM(CASE WHEN parcels.status IN (11,14) THEN 1 ELSE 0 END) as received_count"),
+                DB::raw("SUM(CASE WHEN parcels.status IN (11,14) THEN parcels.total_charge ELSE 0 END) as received_amount"),
+
+                // Pending
+                DB::raw("SUM(CASE WHEN parcels.status IN (1,2,4,22,23) THEN 1 ELSE 0 END) as pending_count"),
+                DB::raw("SUM(CASE WHEN parcels.status IN (1,2,4,22,23) THEN parcels.total_charge ELSE 0 END) as pending_amount"),
+
+                // Delivered
+                DB::raw("SUM(CASE WHEN parcels.status = 21 THEN 1 ELSE 0 END) as delivered_count"),
+                DB::raw("SUM(CASE WHEN parcels.status = 21 THEN parcels.total_charge ELSE 0 END) as delivered_amount"),
+
+                // Canceled
+                DB::raw("SUM(CASE
+                WHEN parcels.status IN (3,7,13,18)
+                OR (parcels.status = 25 AND parcels.delivery_type = 4)
+                THEN 1 ELSE 0 END) as canceled_count"),
+                DB::raw("SUM(CASE
+                WHEN parcels.status IN (3,7,13,18)
+                OR (parcels.status = 25 AND parcels.delivery_type = 4)
+                THEN parcels.total_charge ELSE 0 END) as canceled_amount"),
+
+                // Dispatched
+                DB::raw("SUM(CASE WHEN parcels.status = 12 THEN 1 ELSE 0 END) as dispatched_count"),
+                DB::raw("SUM(CASE WHEN parcels.status = 12 THEN parcels.total_charge ELSE 0 END) as dispatched_amount"),
+
+                // Returned
+                DB::raw("SUM(CASE WHEN parcels.status BETWEEN 24 AND 36 THEN 1 ELSE 0 END) as returned_count"),
+                DB::raw("SUM(CASE WHEN parcels.status BETWEEN 24 AND 36 THEN parcels.total_charge ELSE 0 END) as returned_amount")
+            )
+            ->groupBy('branches.id', 'branches.name')
+            ->get();
+            // dd($data);
+
+        return view('admin.parcel.branch_wise_parcel_report', $data);
+    }
+    function today_parcel_for_delivery(){
+         $data['main_menu']  = 'parcel';
+        $data['child_menu'] = 'today_parcel_for_delivery';
+        $data['page_title'] = 'Today Parcel For Delivery';
+        $data['collapse']   = 'sidebar-collapse';
+        $today =  date('Y-m-d');
+        // $today =  date('2025-03-05');
+        $data['todayDelivery'] = Parcel::whereDate('delivery_date', $today)
+        ->join('merchants', 'merchants.id', '=', 'parcels.merchant_id')
+        ->selectRaw('
+            merchant_id,
+            merchants.name as merchant_name,
+            SUM(total_collect_amount) as total_collect_amount,
+            SUM(total_charge) as total_charge,
+            COUNT(parcels.id) as total_parcel
+        ')
+    ->groupBy('merchant_id', 'merchants.name')
+    ->get();
+    // return  $todayDelivery;
+     return view('admin.parcel.today_parcel_delivery_report', $data);
+
+
 
     }
 
+     function merchant_today_pickup(){
+         $data['main_menu']  = 'parcel';
+        $data['child_menu'] = 'merchant_today_pickup';
+        $data['page_title'] = 'Today Merchant Pickup';
+        $data['collapse']   = 'sidebar-collapse';
+        $today =  date('Y-m-d');
+        // $today =  date('2025-03-05');
+        $data['todayPickup'] = Parcel::whereDate('delivery_date', $today)
+        ->join('merchants', 'merchants.id', '=', 'parcels.merchant_id')
+        ->selectRaw('
+            merchant_id,
+            merchants.name as merchant_name,
+            SUM(total_collect_amount) as total_collect_amount,
+            SUM(total_charge) as total_charge,
+            COUNT(parcels.id) as total_parcel
+        ')
+    ->groupBy('merchant_id')
+    ->get();
+    // return  $todayDelivery;
+     return view('admin.parcel.today_parcel_delivery_report', $data);
+
+
+
+    }
 }

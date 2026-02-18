@@ -335,6 +335,27 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ route('admin.parcel.branch_wise_parcel_report') }}"
+                               class="nav-link {{ $child_menu == 'branch_wise_parcel_report' ? 'active' : '' }}">
+                                <i class="fas fa-tags"></i>
+                                <p>Branch Wise Parcel Report </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.parcel.today_parcel_for_delivery') }}"
+                               class="nav-link {{ $child_menu == 'today_parcel_for_delivery' ? 'active' : '' }}">
+                                <i class="fas fa-tags"></i>
+                                <p>Today Parcel For Delivery </p>
+                            </a>
+                        </li>
+                        {{-- <li class="nav-item">
+                            <a href="{{ route('admin.parcel.merchant_today_pickup') }}"
+                               class="nav-link {{ $child_menu == 'merchant_today_pickup' ? 'active' : '' }}">
+                                <i class="fas fa-tags"></i>
+                                <p>Merchant Today Pickup </p>
+                            </a>
+                        </li> --}}
+                        <li class="nav-item">
                             <a href="{{ route('admin.parcel.orderTracking') }}"
                                class="nav-link {{ $child_menu == 'orderTracking' ? 'active' : '' }}">
                                 <i class="fas fa-map-marker"></i>
